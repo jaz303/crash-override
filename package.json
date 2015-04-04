@@ -1,0 +1,23 @@
+{
+  "name": "crash-override",
+  "version": "0.0.0",
+  "description": "Control system functions (restart/shutdown/volume/screensaver etc)",
+  "keywords": [],
+  "scripts": {
+    "test": "set -e; for t in test/*; do node $t; done"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaz303/crash-override.git"
+  },
+  "author": "Jason Frame <jason@onehackoranother.com> (http://jasonframe.co.uk)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaz303/crash-override/issues"
+  },
+  "homepage": "http://github.com/jaz303/crash-override"
+}
