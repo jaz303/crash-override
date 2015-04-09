@@ -2,7 +2,7 @@
   "name": "crash-override",
   "version": "0.1.0",
   "description": "Control system functions (restart/shutdown/volume/screensaver etc)",
-  "keywords": [],
+  "keywords": ["control", "system", "screensaver", "volume", "mute", "unmute", "shutdown", "sleep"],
   "scripts": {
     "test": "set -e; for t in test/*; do node $t; done"
   },
