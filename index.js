@@ -1,13 +1,15 @@
 var os = require('os');
 
 var impl = (function() {
-    switch (require('os').platform()) {
-        case 'darwin':
-            return require('./lib/darwin');
-        case 'linux':
-        	return require('./lib/linux');
-        default:
-            throw new Error("unsupported platform");
+    var platform = os.platform();
+    if (platform === 'darwin') {
+        return require('./lib/darwin');
+    } else if (platform === 'linux') {
+        return require('./lib/linux');
+    } else if (platform.match(/^win/)) {
+        return require('./lib/windows');
+    } else {
+        throw new Error("unsupported platform");
     }
 })();
 
